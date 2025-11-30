@@ -258,7 +258,7 @@ async def error_handler(update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 
 def main():
-    TOKEN = "7991222227:AAHDmw7N4g8KH15bAW-9szLAbtApPjfEitQ"
+    TOKEN = os.getenv("TOKEN")
 
     application = ApplicationBuilder().token(TOKEN).build()
 
